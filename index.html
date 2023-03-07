@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, user-scalable=1.0">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <title>Urna eletrônica</title>
+</head>
+<body>
+    <audio id="somConfirma" controls="controls" src="assets/som_da_urna/somConfirma.mp3"></audio>
+    <audio id="somFim" controls="controls" src="assets/som_da_urna/somFim.mp3"></audio>
+    <a href="index2.html"><button id="bt_candidato">Candidatos</button></a>
+    <button id="reiniciar"><img src="assets/imagem/reiniciar.jpg"></button>
+    <div class="linha"></div>
+    <div class="ocultar-lateral-top-esquerda"></div>
+    <div class="ocultar-lateral-top-direita"></div>
+    <div class="oculta-lateral-esquerda"></div>
+    <div class="oculta-lateral-direita"></div>
+    <div class="urna">
+        <div class="tela">
+            <div class="d-1">
+                <div class="d-1-left">
+                    <div class="d-1-1">
+                        <span>SEU VOTO PARA</span>
+                    </div>
+                    <div class="d-1-2">
+                        <span>VEREADOR</span>
+                    </div>
+                    <div class="d-1-3">
+                        <div class="numero pisca"></div>
+                        <div class="numero"></div>
+                    </div>
+                    <div class="d-1-4">
+                        Nome: FULANO DE TAL<br>
+                        PARTIDO: QQQ<br>
+                        Vice-Prefeito: BELTRANO DE TAL<br>
+                    </div>
+                </div>
+                <div class="d-1-right">
+                    <div class="d-1-image">
+                        <img src=" ">
+                        Prefeito
+                    </div>
+                    <div class="d-1-image">
+                        <img src=" ">
+                        Vice Prefeito
+                    </div>
+                </div>
+            </div>
+            <div class="d-2">
+                Aperte a tecla<br>
+                CONFIRMA para confirmar este voto<br>
+                CORRIGE para REINICIAR este voto
+            </div>
+        </div>
+        <div class="teclado">
+            <div class="teclado-top">
+                <img src="assets/imagem/logo.jpg">
+                <p>JUSTIÇA <br> ELEITORAL</p>
+            </div>
+            <div class="teclado-bottom">
+            <div class="teclado--linha">
+                <div class="teclado--botao" onclick="clicou('1')">1</div>
+                <div class="teclado--botao" onclick="clicou('2')">2</div>
+                <div class="teclado--botao" onclick="clicou('3')">3</div>
+            </div>
+            <div class="teclado--linha">
+                <div class="teclado--botao" onclick="clicou('4')">4</div>
+                <div class="teclado--botao" onclick="clicou('5')">5</div>
+                <div class="teclado--botao" onclick="clicou('6')">6</div>
+            </div>
+            <div class="teclado--linha">
+                <div class="teclado--botao" onclick="clicou('7')">7</div>
+                <div class="teclado--botao" onclick="clicou('8')">8</div>
+                <div class="teclado--botao" onclick="clicou('9')">9</div>
+            </div>
+            <div class="teclado--linha">
+                <div class="teclado--botao" onclick="clicou('0')">0</div>
+            </div>
+            <div class="teclado--linha bt-b-v-v">
+                <div class="teclado--branco" onclick="branco()">BRANCO</div>
+                <div class="teclado--corrige" onclick="corrige()">CORRIGE</div>
+                <div class="teclado--confirma" onclick="confirma()">CONFIRMA</div>
+            </div>
+            </div>
+        </div>
+    </div>
+    <script src="assets/javaScript/etapas.js"></script>
+    <script src="assets/javaScript/javaScript.js"></script>
+</body>
+</html>
